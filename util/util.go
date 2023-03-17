@@ -17,8 +17,8 @@ func Deploy() {
 	if err != nil {
 		panic(err)
 	}
-	auth := getAccountAuth(client, "b7bb8468fd606f0d0ea6802eb505c814e39dc8732f452aa729eb3d7acf8bdb51")
 
+	auth := getAccountAuth(client, "b7bb8468fd606f0d0ea6802eb505c814e39dc8732f452aa729eb3d7acf8bdb51")
 	input := "1.0"
 	address, tx, instance, err := store.DeployContracts(auth, client, input)
 	if err != nil {
